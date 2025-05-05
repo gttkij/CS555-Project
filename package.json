@@ -10,7 +10,7 @@
     "start": "concurrently \"npm run start-backend\" \"npm run start-frontend\"",
     "build-frontend": "vite build --cwd react-client"
   },
-  "author": "",
+  "author": "Harshith D. Kelkar, Kartik Rajeev Patil, Abhishek Esakkiappan, Xin Meng",
   "license": "ISC",
   "dependencies": {
     "@elastic/elasticsearch": "^7.10.0",
