@@ -1,3 +1,4 @@
+import { auth } from "./FireBaseConfig";
 import {
   getAuth,
   createUserWithEmailAndPassword,
@@ -13,7 +14,7 @@ import {
 } from "firebase/auth";
 
 async function doCreateUserWithEmailAndPassword(email, password, displayName) {
-  const auth = getAuth();
+  // const auth = getAuth();
   await createUserWithEmailAndPassword(auth, email, password);
   await updateProfile(auth.currentUser, { displayName: displayName });
 }
